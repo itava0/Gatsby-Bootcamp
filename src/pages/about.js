@@ -1,12 +1,13 @@
-import React from "react";
+import React from "react"
+import Layout from "../components/layout"
 
 const AboutPage = () => {
   return (
-    <div>
+    <Layout>
       <h1>Title</h1>
       <p>bio....</p>
-    </div>
+    </Layout>
   )
 }
 
-export default AboutPage;
+export default AboutPage
