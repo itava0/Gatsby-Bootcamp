@@ -1,8 +1,9 @@
-import React from 'react';
-import Header from './header';
-import Footer from './footer';
+import React from "react"
+import Header from "./header"
+import Footer from "./footer"
+import "../styles/index.scss"
 
-const Layout = (props) => {
+const Layout = props => {
   return (
     <div>
       <Header />
@@ -12,4 +13,4 @@ const Layout = (props) => {
   )
 }
 
-export default Layout;
+export default Layout

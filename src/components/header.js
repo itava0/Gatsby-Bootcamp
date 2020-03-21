@@ -1,6 +1,6 @@
 import React from "react"
 // We used the Link component intead of the <a> tag for optimaziation.
-import { Link } from "gatsby";
+import { Link } from "gatsby"
 
 const Header = () => {
   return (
@@ -26,4 +26,4 @@ const Header = () => {
   )
 }
 
-export default Header;
+export default Header
