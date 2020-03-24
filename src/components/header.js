@@ -1,10 +1,11 @@
 import React from "react"
 // We used the Link component intead of the <a> tag for optimaziation.
 import { Link } from "gatsby"
+import headerStyles from "./header.module.scss"
 
 const Header = () => {
   return (
-    <header>
+    <header className={headerStyles.header}>
       <h1>Igor Tavarez</h1>
       <nav>
         <ul>
