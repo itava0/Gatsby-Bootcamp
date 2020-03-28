@@ -1,13 +1,22 @@
 import React from "react"
 // We used the Link component intead of the <a> tag for optimaziation.
-import { Link } from "gatsby"
+import { Link, graphql, useStaticQuery } from "gatsby"
 import headerStyles from "./header.module.scss"
 
 const Header = () => {
+  const data = useStaticQuery(graphql`
+      query{
+        site{
+          siteMetadata{
+            title
+          }
+        }
+      }
+  `)
   return (
     <header className={headerStyles.header}>
       <h1>
-        <Link to="/" className={headerStyles.title}>Igor Tavarez</Link>
+        <Link to="/" className={headerStyles.title}>{data.site.siteMetadata.title}</Link>
       </h1>
       <nav>
         <ul className={headerStyles.navList}>
