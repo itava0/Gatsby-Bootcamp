@@ -5,8 +5,9 @@ import Layout from "../components/layout"
 const AboutPage = () => {
   return (
     <Layout>
-      <h1>Title</h1>
-      <p>bio....</p>
+      <h1>About me</h1>
+      <p>Tremendo tigere que se come la yuca de tu madre..</p>
+      <p>Domicano viendo el sueno americano en el culo de tu madre</p>
     </Layout>
   )
 }
